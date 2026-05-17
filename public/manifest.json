@@ -1,0 +1,10 @@
+{
+  "name": "Dary Słońca",
+  "short_name": "Dary Słońca",
+  "description": "Piękno • Zdrowie • Harmonia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff8ef",
+  "theme_color": "#d98fa5",
+  "icons": []
+}

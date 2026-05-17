@@ -1,0 +1,5 @@
+import Header from '@/components/Header'
+import ProtectedRoute from '@/components/ProtectedRoute'
+import { wellnessCalendar } from '@/lib/demoData'
+
+export default function Calendar(){return <main><Header/><ProtectedRoute><section className="mx-auto max-w-6xl px-4 py-10"><span className="badge">🗓️ Kalendarz wellness</span><h1 className="mt-4 text-4xl font-black">Twój tydzień harmonii</h1><div className="mt-8 grid gap-4 md:grid-cols-7">{wellnessCalendar.map(d=><div className="card p-5 text-center" key={d.day}><p className="text-sm font-black text-[#9b6a7b]">{d.day}</p><div className="mt-4 text-4xl">{d.icon}</div><h2 className="mt-4 min-h-12 font-black">{d.title}</h2><span className="badge mt-3">{d.status}</span></div>)}</div><div className="card mt-6 p-6"><h2 className="text-2xl font-black">Najbliższe przypomnienia</h2><div className="mt-4 grid gap-3 md:grid-cols-3"><div className="rounded-2xl bg-white/70 p-4">💧 Woda co 2 godziny</div><div className="rounded-2xl bg-white/70 p-4">📏 Pomiary w czwartek</div><div className="rounded-2xl bg-white/70 p-4">🌙 Regeneracja w niedzielę</div></div></div></section></ProtectedRoute></main>}

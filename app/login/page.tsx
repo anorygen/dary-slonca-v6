@@ -1,0 +1,3 @@
+import Header from '@/components/Header'
+import LoginForm from '@/components/LoginForm'
+export default function Login(){return <main><Header/><section className="mx-auto grid max-w-5xl gap-6 px-4 py-12 md:grid-cols-2"><div className="glass rounded-[36px] p-8"><span className="badge">☀️ Bezpieczne logowanie</span><h1 className="mt-5 text-4xl font-black">Wejdź do swojej przestrzeni</h1><p className="mt-4 text-[#8f6b78]">Logowanie działa z Supabase Auth. Konta podopiecznych może tworzyć administrator.</p><div className="mt-6 rounded-3xl bg-white/60 p-5"><b>Dary Słońca</b><p className="text-sm text-[#8f6b78]">Piękno • Zdrowie • Harmonia</p></div></div><LoginForm/></section></main>}

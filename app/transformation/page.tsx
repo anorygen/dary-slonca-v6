@@ -1,0 +1,4 @@
+import Header from '@/components/Header'
+import ProtectedRoute from '@/components/ProtectedRoute'
+import PhotoUpload from '@/components/PhotoUpload'
+export default function Transformation(){return <main><Header/><ProtectedRoute><section className="mx-auto max-w-5xl px-4 py-10"><span className="badge">🌺 Strefa przemiany</span><h1 className="mt-4 text-4xl font-black">Twoja historia krok po kroku</h1><p className="mt-3 max-w-2xl text-[#8f6b78]">Dodawaj zdjęcia przed, w trakcie i po programie. Galeria jest przygotowana pod Supabase Storage.</p><PhotoUpload/><div className="mt-6 grid gap-4 md:grid-cols-3">{['Przed','Postęp','Po'].map(x=><div className="card grid min-h-56 place-items-center p-6 text-center" key={x}><div><div className="text-4xl">☀️</div><h3 className="mt-3 text-xl font-black">{x}</h3><p className="text-sm text-[#8f6b78]">Po podłączeniu bazy zobaczysz tu zdjęcia.</p></div></div>)}</div></section></ProtectedRoute></main>}

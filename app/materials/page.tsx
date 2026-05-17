@@ -1,0 +1,3 @@
+import Header from '@/components/Header'
+import ProtectedRoute from '@/components/ProtectedRoute'
+export default function Materials(){return <main><Header/><ProtectedRoute><section className="mx-auto max-w-5xl px-4 py-10"><span className="badge">📄 Materiały premium</span><h1 className="mt-4 text-4xl font-black">Twoja biblioteka wellness</h1><div className="mt-8 grid gap-5 md:grid-cols-3">{['Jadłospis PDF','Plan treningowy','Checklisty nawyków'].map(x=><div className="card p-6" key={x}><div className="text-4xl">☀️</div><h2 className="mt-4 text-xl font-black">{x}</h2><p className="mt-2 text-[#8f6b78]">Po dodaniu w panelu admina materiały będą dostępne tutaj.</p><button className="btn-secondary mt-5">Otwórz</button></div>)}</div></section></ProtectedRoute></main>}
