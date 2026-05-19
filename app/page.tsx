@@ -32,7 +32,15 @@ export default function Home() {
               <div className="rounded-3xl bg-white/70 p-5"><div className="text-2xl">🔥</div><b>Streak</b><p className="text-sm text-[#8f6b78]">9 dni</p></div>
               <div className="rounded-3xl bg-white/70 p-5"><div className="text-2xl">🧘‍♀️</div><b>Regeneracja</b><p className="text-sm text-[#8f6b78]">dobry sen</p></div>
               <div className="rounded-3xl bg-white/70 p-5"><div className="text-2xl">✨</div><b>Nastrój</b><p className="text-sm text-[#8f6b78]">spokojny</p></div>
-            </div>
+            <div className="mt-10 text-center">
+
+<Link href="/login" className="btn-primary">
+
+Zaloguj do panelu
+
+</Link>
+
+</div>
           </div>
         </div>
       </section>
