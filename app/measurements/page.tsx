@@ -1,5 +1,61 @@
-export default function MeasurementsPage() {
+'use client'
 
+import { useState } from 'react'
+
+import { supabase } from '@/lib/supabase'
+
+export default function MeasurementsPage() {
+const [weight, setWeight] = useState('')
+
+const [waist, setWaist] = useState('')
+
+const [hips, setHips] = useState('')
+
+const [thigh, setThigh] = useState('')
+
+const [chest, setChest] = useState('')
+
+const [mood, setMood] = useState('')
+
+const saveMeasurements = async () => {
+
+const { error } = await supabase
+
+.from('measurements')
+
+.insert([
+
+{
+
+weight,
+
+waist,
+
+hips,
+
+thigh,
+
+chest,
+
+mood,
+
+},
+
+])
+
+if (error) {
+
+alert('Błąd zapisu')
+
+console.log(error)
+
+} else {
+
+alert('Pomiary zapisane 💖')
+
+}
+
+}
 return (
 
 <main className="mx-auto max-w-3xl p-6">
@@ -20,11 +76,16 @@ Monitoruj swoje postępy i zapisuj wyniki.
 
 <div className="mt-8 grid gap-4">
 
-<input
 
+<input
 type="number"
 
 placeholder="Waga (kg)"
+
+
+value={weight}
+
+onChange={(e) => setWeight(e.target.value)}
 
 className="rounded-2xl border border-[#f0d6df] p-4"
 
@@ -35,7 +96,9 @@ className="rounded-2xl border border-[#f0d6df] p-4"
 type="number"
 
 placeholder="Talia (cm)"
+value={waist}
 
+onChange={(e) => setWaist(e.target.value)}
 className="rounded-2xl border border-[#f0d6df] p-4"
 
 />
@@ -45,7 +108,9 @@ className="rounded-2xl border border-[#f0d6df] p-4"
 type="number"
 
 placeholder="Biodra (cm)"
+value={hips}
 
+onChange={(e) => setHips(e.target.value)}
 className="rounded-2xl border border-[#f0d6df] p-4"
 
 />
@@ -58,7 +123,13 @@ className="rounded-2xl border border-[#f0d6df] p-4"
 
 />
 
-<button className="btn-primary mt-4">
+<button
+
+onClick={saveMeasurements}
+
+className="btn-primary mt-4"
+
+>
 
 Zapisz pomiary
 
