@@ -40,6 +40,50 @@ Zaloguj do panelu
 
 </Link>
 
+<div className="mt-12 rounded-[36px] bg-white/80 p-8 shadow-sm">
+
+<div className="badge">Demo użytkowniczki</div>
+
+<h2 className="mt-4 text-3xl font-bold text-[#4b3147]">
+
+Anna Kowalska
+
+</h2>
+
+<p className="mt-2 text-[#7b6175]">
+
+Program: Kobieca Przemiana 90 dni
+
+</p>
+
+<div className="mt-6 grid gap-4 md:grid-cols-3">
+
+<div className="rounded-3xl bg-[#fff6f8] p-5">
+
+<div className="text-sm text-[#9b6a7b]">Waga</div>
+
+<div className="mt-2 text-3xl font-bold">-8 kg</div>
+
+</div>
+
+<div className="rounded-3xl bg-[#fff6f8] p-5">
+
+<div className="text-sm text-[#9b6a7b]">Treningi</div>
+
+<div className="mt-2 text-3xl font-bold">24</div>
+
+</div>
+
+<div className="rounded-3xl bg-[#fff6f8] p-5">
+
+<div className="text-sm text-[#9b6a7b]">Nawodnienie</div>
+
+<div className="mt-2 text-3xl font-bold">92%</div>
+
+</div>
+
+</div>
+
 </div>
           </div>
         </div>
