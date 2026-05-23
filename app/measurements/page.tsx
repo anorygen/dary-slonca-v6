@@ -46,7 +46,7 @@ date,
 
 if (error) {
 
-alert('Błąd zapisu')
+alert(error.message)
 
 console.log(error)
 
