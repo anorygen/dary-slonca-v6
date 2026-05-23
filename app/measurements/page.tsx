@@ -34,11 +34,15 @@ waist,
 
 hips,
 
-thigh,
+thigh: thigh || null,
 
-chest,
+chest: chest || null,
 
-mood,
+mood: mood || null,
+
+
+
+
 date,
 },
 ])
