@@ -84,9 +84,8 @@ Program: Kobieca Przemiana 90 dni
 
 </div>
 
-</div>
-          </div>
-        </div>
+
+        
       </section>
     </main>
   )
