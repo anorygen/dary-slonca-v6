@@ -254,7 +254,7 @@ className="rounded-2xl border border-[#f0d6df] p-4 bg-white"
 <p>🦵 Udo: {item.thigh}</p>
 
 <p>💪 Klatka: {item.chest}</p>
-
+<p>💪 Ramię: {item.arm}</p>
 <p>🌸 Samopoczucie: {item.mood}</p>
 <p>📅 Data: {item.date}</p>
 </div>
