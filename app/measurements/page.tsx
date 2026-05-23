@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import { supabase } from '@/lib/supabase'
 
@@ -16,7 +16,7 @@ const [thigh, setThigh] = useState('')
 const [chest, setChest] = useState('')
 
 const [mood, setMood] = useState('')
-
+const [saved, setSaved] = useState<any[]>([])
 const saveMeasurements = async () => {
 
 const { error } = await supabase
@@ -56,8 +56,30 @@ alert('Pomiary zapisane 💖')
 }
 
 }
-return (
+  const loadMeasurements = async () => {
 
+const { data } = await supabase
+
+.from('measurements')
+
+.select('*')
+
+.order('created_at', { ascending: false })
+
+if (data) {
+
+setSaved(data)
+
+}
+
+}
+  
+useEffect(() => {
+
+loadMeasurements()
+
+}, []) 
+return (
 <main className="mx-auto max-w-3xl p-6">
 
 <div className="glass rounded-[36px] p-8">
