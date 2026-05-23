@@ -158,7 +158,45 @@ Zapisz pomiary
 </button>
 
 </div>
+<div className="mt-10">
 
+<h2 className="text-2xl font-bold text-[#5b4b5c] mb-4">
+
+Historia pomiarów
+
+</h2>
+
+<div className="space-y-4">
+
+{saved.map((item: any, index: number) => (
+
+<div
+
+key={index}
+
+className="rounded-2xl border border-[#f0d6df] p-4 bg-white"
+
+>
+
+<p>⚖️ Waga: {item.weight}</p>
+
+<p>📏 Talia: {item.waist}</p>
+
+<p>🍑 Biodra: {item.hips}</p>
+
+<p>🦵 Udo: {item.thigh}</p>
+
+<p>💪 Klatka: {item.chest}</p>
+
+<p>🌸 Samopoczucie: {item.mood}</p>
+
+</div>
+
+))}
+
+</div>
+
+</div>
 </div>
 
 </main>
