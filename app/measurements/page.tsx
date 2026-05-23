@@ -16,6 +16,7 @@ const [thigh, setThigh] = useState('')
 const [chest, setChest] = useState('')
 
 const [mood, setMood] = useState('')
+const [date, setDate] = useState('') 
 const [saved, setSaved] = useState<any[]>([])
 const saveMeasurements = async () => {
 
@@ -38,10 +39,10 @@ thigh,
 chest,
 
 mood,
-
+date,
 },
-
 ])
+
 
 if (error) {
 
@@ -140,7 +141,9 @@ className="rounded-2xl border border-[#f0d6df] p-4"
 <input
 
 type="date"
+value={date}
 
+onChange={(e) => setDate(e.target.value)}
 className="rounded-2xl border border-[#f0d6df] p-4"
 
 />
@@ -189,7 +192,7 @@ className="rounded-2xl border border-[#f0d6df] p-4 bg-white"
 <p>💪 Klatka: {item.chest}</p>
 
 <p>🌸 Samopoczucie: {item.mood}</p>
-
+<p>📅 Data: {item.date}</p>
 </div>
 
 ))}
