@@ -57,7 +57,7 @@ console.log(error)
 } else {
 
 alert('Pomiary zapisane 💖')
-
+loadMeasurements()
 }
 
 }
