@@ -10,12 +10,18 @@ const [weight, setWeight] = useState('')
 const [waist, setWaist] = useState('')
 
 const [hips, setHips] = useState('')
-
 const [thigh, setThigh] = useState('')
 
 const [chest, setChest] = useState('')
 
+const [arm, setArm] = useState('')
+
 const [mood, setMood] = useState('')
+
+
+
+
+
 const [date, setDate] = useState('') 
 const [saved, setSaved] = useState<any[]>([])
 const saveMeasurements = async () => {
@@ -37,7 +43,7 @@ hips,
 thigh: thigh || null,
 
 chest: chest || null,
-
+arm: arm || null,
 mood: mood || null,
 
 
@@ -141,7 +147,61 @@ onChange={(e) => setHips(e.target.value)}
 className="rounded-2xl border border-[#f0d6df] p-4"
 
 />
+<input
 
+type="number"
+
+placeholder="Udo (cm)"
+
+value={thigh}
+
+onChange={(e) => setThigh(e.target.value)}
+
+className="rounded-2xl border border-[#f0d6df] p-4"
+
+/>
+
+<input
+
+type="number"
+
+placeholder="Klatka (cm)"
+
+value={chest}
+
+onChange={(e) => setChest(e.target.value)}
+
+className="rounded-2xl border border-[#f0d6df] p-4"
+
+/>
+
+<input
+
+type="number"
+
+placeholder="Ramię (cm)"
+
+value={arm}
+
+onChange={(e) => setArm(e.target.value)}
+
+className="rounded-2xl border border-[#f0d6df] p-4"
+
+/>
+
+<input
+
+type="text"
+
+placeholder="Samopoczucie"
+
+value={mood}
+
+onChange={(e) => setMood(e.target.value)}
+
+className="rounded-2xl border border-[#f0d6df] p-4"
+
+/>
 <input
 
 type="date"
