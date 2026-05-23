@@ -3,7 +3,21 @@
 import { useState, useEffect } from 'react'
 
 import { supabase } from '@/lib/supabase'
+import {
 
+LineChart,
+
+Line,
+
+XAxis,
+
+YAxis,
+
+Tooltip,
+
+ResponsiveContainer
+
+} from 'recharts'
 export default function MeasurementsPage() {
 const [weight, setWeight] = useState('')
 
