@@ -38,6 +38,21 @@ const [mood, setMood] = useState('')
 
 const [date, setDate] = useState('') 
 const [saved, setSaved] = useState<any[]>([])
+const [visibleLines, setVisibleLines] = useState({
+
+weight: true,
+
+waist: true,
+
+hips: true,
+
+thigh: false,
+
+chest: false,
+
+arm: false,
+
+})  
 const saveMeasurements = async () => {
 
 const { error } = await supabase
@@ -265,6 +280,98 @@ Historia pomiarów
 <YAxis />
 
 <Tooltip />
+<div className="flex flex-wrap gap-2 mb-4">
+
+<button
+
+onClick={() =>
+
+setVisibleLines({
+
+...visibleLines,
+
+weight: !visibleLines.weight,
+
+})
+
+}
+
+className="px-3 py-1 rounded-full bg-pink-200"
+
+>
+
+Waga
+
+</button>
+
+<button
+
+onClick={() =>
+
+setVisibleLines({
+
+...visibleLines,
+
+waist: !visibleLines.waist,
+
+})
+
+}
+
+className="px-3 py-1 rounded-full bg-orange-200"
+
+>
+
+Talia
+
+</button>
+
+<button
+
+onClick={() =>
+
+setVisibleLines({
+
+...visibleLines,
+
+hips: !visibleLines.hips,
+
+})
+
+}
+
+className="px-3 py-1 rounded-full bg-violet-200"
+
+>
+
+Biodra
+
+</button>
+
+<button
+
+onClick={() =>
+
+setVisibleLines({
+
+...visibleLines,
+
+arm: !visibleLines.arm,
+
+})
+
+}
+
+className="px-3 py-1 rounded-full bg-green-200"
+
+>
+
+Ramię
+
+</button>
+
+</div>
+{visibleLines.weight && (
 
 <Line
 
@@ -277,6 +384,88 @@ stroke="#ec4899"
 strokeWidth={3}
 
 />
+
+)}
+
+{visibleLines.waist && (
+
+<Line
+
+type="monotone"
+
+dataKey="waist"
+
+stroke="#f59e0b"
+
+strokeWidth={3}
+
+/>
+
+)}
+
+{visibleLines.hips && (
+
+<Line
+
+type="monotone"
+
+dataKey="hips"
+
+stroke="#fb923c"
+
+strokeWidth={3}
+
+/>
+
+)}
+
+{visibleLines.thigh && (
+
+<Line
+
+type="monotone"
+
+dataKey="thigh"
+
+stroke="#22c55e"
+
+strokeWidth={3}
+
+/>
+
+)}
+
+{visibleLines.chest && (
+
+<Line
+
+type="monotone"
+
+dataKey="chest"
+
+stroke="#3b82f6"
+
+strokeWidth={3}
+
+/>
+
+)}
+
+{visibleLines.arm && (
+
+<Line
+
+type="monotone"
+
+dataKey="arm"
+
+stroke="#a855f7"
+
+strokeWidth={3}
+
+/>
+
+)}
 
 </LineChart>
 
@@ -314,6 +503,44 @@ className="rounded-2xl border border-[#f0d6df] p-4 bg-white"
 </div>
 
 ))}
+
+</div>
+
+<div className="rounded-3xl bg-white p-6 shadow-md mt-8">
+
+<h3 className="text-xl font-bold text-[#5b4b5c] mb-4">
+
+🌸 Samopoczucie
+
+</h3>
+
+<div style={{ width: '100%', height: 300 }}>
+
+<ResponsiveContainer>
+
+<LineChart data={saved}>
+
+<XAxis dataKey="date" />
+
+<YAxis />
+
+<Tooltip />
+
+<Line
+
+type="monotone"
+
+dataKey="mood"
+
+stroke="#ec4899"
+
+strokeWidth={4}
+
+/>
+
+</LineChart>
+
+</ResponsiveContainer>
 
 </div>
 
