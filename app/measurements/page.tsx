@@ -544,8 +544,6 @@ strokeWidth={4}
 </ResponsiveContainer>
 
 </div>
-
-
 </div>
 
 </main>
