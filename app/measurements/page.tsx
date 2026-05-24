@@ -544,8 +544,7 @@ strokeWidth={4}
 </div>
 </div>
 
-</main>
-</>
-)
+</div>
 
+)
 }
