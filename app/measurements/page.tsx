@@ -246,6 +246,46 @@ Zapisz pomiary
 Historia pomiarów
 
 </h2>
+<div className="rounded-3xl bg-white p-6 shadow-md mb-6">
+
+<h3 className="text-xl font-bold text-[#5b4b5c] mb-4">
+
+📈 Postępy wagi
+
+</h3>
+
+<div style={{ width: '100%', height: 300 }}>
+
+<ResponsiveContainer>
+
+<LineChart data={saved}>
+
+<XAxis dataKey="date" />
+
+<YAxis />
+
+<Tooltip />
+
+<Line
+
+type="monotone"
+
+dataKey="weight"
+
+stroke="#ec4899"
+
+strokeWidth={3}
+
+/>
+
+</LineChart>
+
+</ResponsiveContainer>
+
+</div>
+
+</div>
+
 
 <div className="space-y-4">
 
