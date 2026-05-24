@@ -107,9 +107,7 @@ const { data } = await supabase
 .order('created_at', { ascending: false })
 
 if (data) {
-
 setSaved(data)
-
 }
 
 }
