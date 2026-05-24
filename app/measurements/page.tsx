@@ -120,7 +120,7 @@ loadMeasurements()
 
 }, [])
 return (
-  <>
+
 <main className="mx-auto max-w-3xl p-6">
 
 <div className="glass rounded-[36px] p-8">
@@ -545,7 +545,7 @@ strokeWidth={4}
 
 </div>
 
-</div>
+
 </div>
 
 </main>
