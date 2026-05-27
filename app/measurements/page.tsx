@@ -96,7 +96,7 @@ loadMeasurements()
 }
 
 }
-  const loadMeasurements = async () => {
+const loadMeasurements = async () => {
 
 const { data } = await supabase
 
@@ -107,17 +107,20 @@ const { data } = await supabase
 .order('created_at', { ascending: false })
 
 if (data) {
+
 setSaved(data)
+
 }
+
 }
-  
+
 useEffect(() => {
 
 loadMeasurements()
 
 }, [])
 
-return (
+return ( 
 <main className="mx-auto max-w-3xl p-6">
 
 <div className="glass rounded-[36px] p-8">
