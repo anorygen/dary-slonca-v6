@@ -21,7 +21,7 @@ src="/logo-dary-slonca.png"
 
 alt="Dary Słońca"
 
-className="mb-6 h-24 w-24 object-contain"
+className="mb-6 h-56 w-56 object-contain"
 
 />
 <span className="badge">🌞 Premium wellness app</span>
