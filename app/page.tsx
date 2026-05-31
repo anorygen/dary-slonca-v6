@@ -17,7 +17,7 @@ return (
 <div className="glass rounded-[36px] p-8 md:p-12">
 <img
 
-src="/logo-dary-slonca.jpg"
+src="/logo-dary-slonca.png"
 
 alt="Dary Słońca"
 
