@@ -140,7 +140,7 @@ Poznaj program
 
 <img
 
-src="/hero-premium.png"
+src="/hero.jpg.png"
 
 alt="Dary Słońca"
 
