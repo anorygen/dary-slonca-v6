@@ -12,37 +12,37 @@ return (
 
 <div className="overflow-hidden rounded-[40px] bg-white/85 shadow-xl backdrop-blur">
 
-<div className="grid min-h-[560px] items-center lg:grid-cols-[45%_55%]">
+<div className="grid min-h-[560px] items-center lg:grid-cols-[42%_58%]">
 
-<div className="px-10 py-12 lg:px-14">
+<div className="px-8 py-10 lg:px-12">
 
-<p className="mb-6 text-xs font-medium uppercase tracking-[10px] text-[#c8a06f]">
+<p className="mb-5 whitespace-nowrap text-xs font-medium uppercase tracking-[5px] text-[#c8a06f]">
 
 PIĘKNO • ZDROWIE • HARMONIA
 
 </p>
 
-<h1 className="mb-7 leading-[0.95]">
+<h1 className="mb-6 leading-[0.95]">
 
-<span className="block text-5xl font-black text-[#3d3846] lg:text-[58px]">
+<span className="block text-5xl font-black text-[#3d3846] lg:text-[50px]">
 
 Nie jesteś sama
 
 </span>
 
-<span className="block text-5xl font-black text-[#d695a4] lg:text-[58px]">
+<span className="block text-5xl font-black text-[#d695a4] lg:text-[50px]">
 
 w drodze
 
 </span>
 
-<span className="block font-serif text-5xl italic text-[#c8a06f] lg:text-[58px]">
+<span className="block font-serif text-5xl italic text-[#c8a06f] lg:text-[50px]">
 
 do lepszej
 
 </span>
 
-<span className="block font-serif text-5xl italic text-[#c8a06f] lg:text-[58px]">
+<span className="block font-serif text-5xl italic text-[#c8a06f] lg:text-[50px]">
 
 Ciebie
 
@@ -50,7 +50,7 @@ Ciebie
 
 </h1>
 
-<p className="mb-7 max-w-xl text-base leading-8 text-[#6b6672] lg:text-lg">
+<p className="mb-6 max-w-xl text-base leading-7 text-[#6b6672]">
 
 Dary Słońca to kobiecy program przemiany premium. Łączymy
 
@@ -60,7 +60,7 @@ który prowadzi Cię krok po kroku.
 
 </p>
 
-<div className="mb-8 space-y-3 text-sm text-[#6b6672]">
+<div className="mb-7 space-y-3 text-sm text-[#6b6672]">
 
 <div className="flex items-center gap-3">
 
@@ -102,7 +102,7 @@ który prowadzi Cię krok po kroku.
 
 href="/dashboard"
 
-className="rounded-full bg-[#d695a4] px-8 py-4 font-bold text-white transition hover:bg-[#cb8495]"
+className="rounded-full bg-[#d695a4] px-7 py-3.5 font-bold text-white transition hover:bg-[#cb8495]"
 
 >
 
@@ -114,7 +114,7 @@ Rozpocznij przemianę
 
 href="/plans"
 
-className="rounded-full border border-[#d695a4] bg-white/60 px-8 py-4 font-bold text-[#d695a4]"
+className="rounded-full border border-[#d695a4] bg-white/60 px-7 py-3.5 font-bold text-[#d695a4]"
 
 >
 
