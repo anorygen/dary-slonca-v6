@@ -12,7 +12,7 @@ return (
 
 <div className="overflow-hidden rounded-[40px] bg-white/85 shadow-xl backdrop-blur">
 
-<div className="grid min-h-[660px] items-center lg:grid-cols-[38%_62%]">
+<div className="grid min-h-[560px] items-center lg:grid-cols-[38%_62%]">
 
 <div className="px-8 py-10 lg:px-12">
 
@@ -126,7 +126,7 @@ Poznaj program
 
 </div>
 
-<div className="relative flex min-h-[660px] items-start justify-center bg-[#f8f1ec] px-6 pb-28 pt-8">
+<div className="relative flex min-h-[560px] items-start justify-center bg-[#f8f1ec] px-6 pb-20 pt-4">
 
 <img
 
@@ -134,7 +134,7 @@ src="/hero.jpg.png"
 
 alt="Dary Słońca"
 
-className="max-h-[560px] w-full object-contain"
+className="max-h-[500px] w-full object-contain"
 
 />
 
