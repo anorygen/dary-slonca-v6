@@ -12,9 +12,11 @@ return (
 
 <section className="mx-auto max-w-7xl px-6 py-10">
 
-<div className="grid gap-10 rounded-[42px] bg-white/70 p-8 shadow-2xl backdrop-blur-xl md:grid-cols-[0.9fr_1.1fr] md:p-14">
+<div className="rounded-[48px] bg-white/75 p-8 shadow-2xl backdrop-blur-xl md:p-14">
 
-<div className="flex flex-col justify-center">
+<div className="grid gap-12 md:grid-cols-[0.95fr_1.05fr] md:items-center">
+
+<div>
 
 <img
 
@@ -22,11 +24,11 @@ src="/logo-dary-slonca.png"
 
 alt="Dary Słońca"
 
-className="mb-8 h-32 w-32 object-contain"
+className="mb-8 h-28 w-28 object-contain"
 
 />
 
-<p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-[#c4898f]">
+<p className="mb-5 text-sm font-bold uppercase tracking-[0.35em] text-[#b9858d]">
 
 Piękno • Zdrowie • Harmonia
 
@@ -34,25 +36,29 @@ Piękno • Zdrowie • Harmonia
 
 <h1 className="text-5xl font-black leading-tight text-[#4f4352] md:text-7xl">
 
-Twoja podróż
+Nie jesteś sama
 
 <br />
 
-<span className="text-[#c98191]">do lepszej</span>
+<span className="text-[#c98191]">w drodze</span>
 
 <br />
 
-<span className="font-serif italic text-[#b98a54]">Ciebie</span>
+<span className="font-serif italic text-[#b98a54]">
+
+do lepszej Ciebie
+
+</span>
 
 </h1>
 
 <p className="mt-8 max-w-xl text-lg leading-8 text-[#6f6470]">
 
-Holistyczne podejście do zdrowia, sylwetki i samopoczucia.
+Dary Słońca to kobiecy program przemiany premium: aplikacja,
 
-Treningi, odżywianie, pomiary, nawyki i codzienna motywacja
+plan działania i prawdziwy trener, który prowadzi Cię krok po
 
-w jednej pięknej aplikacji.
+kroku do celu.
 
 </p>
 
@@ -74,7 +80,7 @@ Rozpocznij przemianę
 
 href="/plans"
 
-className="rounded-full border border-[#c98191] bg-white/60 px-8 py-4 font-bold text-[#9b5f6b] transition hover:scale-105"
+className="rounded-full border border-[#c98191] bg-white/70 px-8 py-4 font-bold text-[#9b5f6b] transition hover:scale-105"
 
 >
 
@@ -104,11 +110,11 @@ dziś
 
 <img
 
-src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200"
+src="https://images.unsplash.com/photo-1524863479829-916d8e77f114?q=80&w=1200"
 
 alt="Kobiecy wellness"
 
-className="h-full min-h-[520px] w-full rounded-[36px] object-cover shadow-2xl"
+className="h-full min-h-[520px] w-full rounded-[38px] object-cover shadow-2xl"
 
 />
 
@@ -116,105 +122,137 @@ className="h-full min-h-[520px] w-full rounded-[36px] object-cover shadow-2xl"
 
 </div>
 
+</div>
+
 </section>
 
-<section className="mx-auto max-w-7xl px-6 pb-16">
+<section className="mx-auto max-w-7xl px-6 py-10">
 
-<h2 className="mb-10 text-center text-4xl font-black text-[#4f4352]">
+<div className="grid gap-6 md:grid-cols-4">
+
+{[
+
+['01', 'Opieka trenera', 'Prawdziwy człowiek, który wspiera, prowadzi i motywuje.'],
+
+['02', 'Aplikacja premium', 'Pomiary, plany, kalendarz, nawyki i postępy w jednym miejscu.'],
+
+['03', 'Kobieca energia', 'Bez presji. Z troską o zdrowie, ciało i samopoczucie.'],
+
+['04', 'Realne efekty', 'Widzisz przemianę w pomiarach, zdjęciach i codziennych nawykach.'],
+
+].map(([number, title, text]) => (
+
+<div
+
+key={title}
+
+className="rounded-[34px] bg-white/75 p-7 shadow-xl backdrop-blur transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+
+>
+
+<div className="mb-5 text-sm font-black tracking-[0.3em] text-[#b98a54]">
+
+{number}
+
+</div>
+
+<h3 className="text-xl font-black text-[#4f4352]">{title}</h3>
+
+<p className="mt-4 text-sm leading-6 text-[#7a6c78]">{text}</p>
+
+</div>
+
+))}
+
+</div>
+
+</section>
+
+<section className="mx-auto max-w-7xl px-6 py-12">
+
+<h2 className="text-center text-4xl font-black text-[#4f4352]">
 
 Program Przemiany
 
 </h2>
 
-<div className="grid gap-6 md:grid-cols-4">
+<p className="mx-auto mt-4 max-w-2xl text-center text-[#7a6c78]">
 
-<div className="rounded-[32px] bg-white/75 p-8 text-center shadow-xl backdrop-blur">
+Kompleksowe prowadzenie kobiet: ciało, zdrowie, nawyki, energia i
 
-<div className="mx-auto mb-5 grid h-16 w-16 place-items-center rounded-full bg-[#f6dfe4] text-3xl">
-
-🥗
-
-</div>
-
-<h3 className="text-lg font-black text-[#4f4352]">
-
-Odżywianie & Nawyki
-
-</h3>
-
-<p className="mt-3 text-sm leading-6 text-[#7a6c78]">
-
-Zdrowe wybory, lekkość i codzienne rytuały wspierające przemianę.
+codzienne wsparcie.
 
 </p>
 
+<div className="mt-10 grid gap-6 md:grid-cols-4">
+
+{[
+
+['✦', 'Odżywianie & Nawyki', 'Zdrowe wybory, lekkość i codzienne rytuały wspierające przemianę.'],
+
+['☼', 'Równowaga & Regeneracja', 'Sen, spokój, redukcja stresu i troska o kobiece samopoczucie.'],
+
+['↗', 'Postępy pod kontrolą', 'Pomiary, wykresy, zdjęcia przemiany i jasny obraz efektów.'],
+
+['♡', 'Motywacja & Wsparcie', 'Codzienna inspiracja, kontakt z trenerem i prowadzenie krok po kroku.'],
+
+].map(([icon, title, text]) => (
+
+<div
+
+key={title}
+
+className="rounded-[34px] bg-white/75 p-8 text-center shadow-xl backdrop-blur transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+
+>
+
+<div className="mx-auto mb-6 grid h-16 w-16 place-items-center rounded-full bg-[#f4dde2] text-3xl text-[#b9858d]">
+
+{icon}
+
 </div>
 
-<div className="rounded-[32px] bg-white/75 p-8 text-center shadow-xl backdrop-blur">
+<h3 className="text-lg font-black text-[#4f4352]">{title}</h3>
 
-<div className="mx-auto mb-5 grid h-16 w-16 place-items-center rounded-full bg-[#f6dfe4] text-3xl">
-
-🌿
+<p className="mt-4 text-sm leading-6 text-[#7a6c78]">{text}</p>
 
 </div>
 
-<h3 className="text-lg font-black text-[#4f4352]">
+))}
 
-Równowaga & Regeneracja
+</div>
 
-</h3>
+</section>
 
-<p className="mt-3 text-sm leading-6 text-[#7a6c78]">
+<section className="mx-auto max-w-7xl px-6 pb-16">
 
-Sen, spokój, redukcja stresu i troska o kobiece samopoczucie.
+<div className="rounded-[42px] bg-[#f6e7e8]/80 p-8 text-center shadow-xl md:p-12">
+
+<p className="text-sm font-bold uppercase tracking-[0.35em] text-[#b9858d]">
+
+Dary Słońca
 
 </p>
 
-</div>
+<h2 className="mt-4 text-4xl font-black text-[#4f4352] md:text-5xl">
 
-<div className="rounded-[32px] bg-white/75 p-8 text-center shadow-xl backdrop-blur">
+Aplikacja jest narzędziem.
 
-<div className="mx-auto mb-5 grid h-16 w-16 place-items-center rounded-full bg-[#f6dfe4] text-3xl">
+<br />
 
-📈
+Największą wartością jest prowadzenie.
 
-</div>
+</h2>
 
-<h3 className="text-lg font-black text-[#4f4352]">
+<p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#6f6470]">
 
-Postępy pod kontrolą
+Każda kobieta otrzymuje nie tylko dostęp do aplikacji, ale też
 
-</h3>
+wsparcie trenera, który pomaga utrzymać kierunek, reaguje na
 
-<p className="mt-3 text-sm leading-6 text-[#7a6c78]">
-
-Pomiary, wykresy, zdjęcia przemiany i jasny obraz efektów.
+potrzeby i prowadzi przez kolejne etapy przemiany.
 
 </p>
-
-</div>
-
-<div className="rounded-[32px] bg-white/75 p-8 text-center shadow-xl backdrop-blur">
-
-<div className="mx-auto mb-5 grid h-16 w-16 place-items-center rounded-full bg-[#f6dfe4] text-3xl">
-
-♡
-
-</div>
-
-<h3 className="text-lg font-black text-[#4f4352]">
-
-Motywacja & Wsparcie
-
-</h3>
-
-<p className="mt-3 text-sm leading-6 text-[#7a6c78]">
-
-Codzienna inspiracja, kobieca energia i prowadzenie krok po kroku.
-
-</p>
-
-</div>
 
 </div>
 
@@ -225,3 +263,4 @@ Codzienna inspiracja, kobieca energia i prowadzenie krok po kroku.
 )
 
 }
+
