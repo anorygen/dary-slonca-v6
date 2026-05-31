@@ -134,11 +134,11 @@ src="/hero.jpg.png"
 
 alt="Dary Słońca"
 
-className="max-h-[620px] w-full object-contain"
+className="max-h-[560px] w-full object-contain"
 
 />
 
-<div className="absolute bottom-10 left-8 right-8 rounded-3xl bg-white/95 p-6 shadow-xl backdrop-blur">
+<div className="absolute -bottom-4 left-8 right-8 rounded-3xl bg-white/95 p-6 shadow-xl">
 
 <div className="mb-2 text-xs uppercase tracking-[4px] text-[#b28a67]">
 
