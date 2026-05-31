@@ -161,7 +161,107 @@ Aplikacja + trener + codzienne wsparcie
 </div>
 
 </section>
+<section className="mx-auto max-w-7xl px-6 py-24">
 
+<div className="text-center mb-16">
+
+<p className="text-sm tracking-[4px] uppercase text-[#c8ab8c]">
+
+Program krok po kroku
+
+</p>
+
+<h2 className="mt-4 text-5xl font-bold text-[#2b2a67]">
+
+Jak działa program?
+
+</h2>
+
+<p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+
+Prosty proces, który prowadzi Cię krok po kroku do trwałej zmiany.
+
+</p>
+
+</div>
+
+<div className="grid gap-8 md:grid-cols-4">
+
+<div className="rounded-3xl bg-white p-8 shadow-lg">
+
+<div className="text-4xl mb-4">🌸</div>
+
+<h3 className="text-xl font-bold mb-3">
+
+Dołącz do programu
+
+</h3>
+
+<p className="text-gray-600">
+
+Wybierz plan i załóż konto.
+
+</p>
+
+</div>
+
+<div className="rounded-3xl bg-white p-8 shadow-lg">
+
+<div className="text-4xl mb-4">📱</div>
+
+<h3 className="text-xl font-bold mb-3">
+
+Dostęp do aplikacji
+
+</h3>
+
+<p className="text-gray-600">
+
+Zadania, monitoring postępów i materiały premium.
+
+</p>
+
+</div>
+
+<div className="rounded-3xl bg-white p-8 shadow-lg">
+
+<div className="text-4xl mb-4">💬</div>
+
+<h3 className="text-xl font-bold mb-3">
+
+Wsparcie trenera
+
+</h3>
+
+<p className="text-gray-600">
+
+Codzienny kontakt i motywacja.
+
+</p>
+
+</div>
+
+<div className="rounded-3xl bg-white p-8 shadow-lg">
+
+<div className="text-4xl mb-4">✨</div>
+
+<h3 className="text-xl font-bold mb-3">
+
+Twoja przemiana
+
+</h3>
+
+<p className="text-gray-600">
+
+Piękniejsze ciało, zdrowie i pewność siebie.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
 </main>
 
 )
