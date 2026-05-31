@@ -12,7 +12,7 @@ return (
 
 <div className="overflow-hidden rounded-[40px] bg-white/85 shadow-xl backdrop-blur">
 
-<div className="grid min-h-[720px] items-center lg:grid-cols-[38%_62%]">
+<div className="grid min-h-[660px] items-center lg:grid-cols-[38%_62%]">
 
 <div className="px-8 py-10 lg:px-12">
 
@@ -50,7 +50,7 @@ Ciebie
 
 </h1>
 
-<p className="mb-6 max-w-xl text-base leading-7 text-[#6b6672]">
+<p className="mb-6 max-w-xl text-sm leading-6 text-[#4b4652]">
 
 Dary Słońca to kobiecy program przemiany premium. Łączymy
 
@@ -60,7 +60,7 @@ który prowadzi Cię krok po kroku.
 
 </p>
 
-<div className="mb-7 space-y-3 text-sm text-[#6b6672]">
+<div className="mb-7 space-y-3 text-sm text-[#4b4652]">
 
 <div className="flex items-center gap-3">
 
@@ -126,7 +126,7 @@ Poznaj program
 
 </div>
 
-<div className="relative flex min-h-[720px] items-center justify-center bg-[#f8f1ec] p-6">
+<div className="relative flex min-h-[660px] items-start justify-center bg-[#f8f1ec] px-6 pb-28 pt-8">
 
 <img
 
@@ -138,7 +138,7 @@ className="max-h-[560px] w-full object-contain"
 
 />
 
-<div className="absolute -bottom-4 left-8 right-8 rounded-3xl bg-white/95 p-6 shadow-xl">
+<div className="absolute bottom-10 left-8 right-8 rounded-3xl bg-white/95 p-5 shadow-xl backdrop-blur">
 
 <div className="mb-2 text-xs uppercase tracking-[4px] text-[#b28a67]">
 
@@ -146,7 +146,7 @@ Program Przemiany Kobiet
 
 </div>
 
-<div className="text-2xl font-bold text-[#3d3846]">
+<div className="text-xl font-bold text-[#3d3846]">
 
 Aplikacja + trener + codzienne wsparcie
 
