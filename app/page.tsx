@@ -15,7 +15,15 @@ return (
 <section className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-[1.05fr_.95fr] md:py-20">
 
 <div className="glass rounded-[36px] p-8 md:p-12">
+<img
 
+src="/logo-dary-slonca.jpg"
+
+alt="Dary Słońca"
+
+className="mb-6 h-24 w-24 object-contain"
+
+/>
 <span className="badge">🌞 Premium wellness app</span>
 
 <h1 className="mt-6 text-5xl font-black leading-tight md:text-7xl">
