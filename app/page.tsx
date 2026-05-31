@@ -1,142 +1,150 @@
-import Link from 'next/link'
-
-import Header from '@/components/Header'
-
-import { brand } from '@/lib/demoData'
+'use client'
 
 export default function Home() {
 
 return (
 
-<main>
+<main className="mx-auto max-w-7xl px-6 py-10">
 
-<Header />
+<section className="glass rounded-[36px] p-8 md:p-12">
 
-<section className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-[1.05fr_.95fr] md:py-20">
+<div className="grid gap-12 md:grid-cols-2 md:items-center">
 
-<div className="glass rounded-[36px] p-8 md:p-12">
+<div>
+
 <img
 
 src="/logo-dary-slonca.png"
 
 alt="Dary Słońca"
 
-className="mb-6 h-56 w-56 object-contain"
+className="mb-8 h-48 w-48 object-contain"
 
 />
-<span className="badge">🌞 Premium wellness app</span>
 
-<h1 className="mt-6 text-5xl font-black leading-tight md:text-7xl">
+<h1 className="text-5xl font-black text-[#5b4b5c] md:text-6xl">
 
-{brand.name}
+Dary Słońca
 
 </h1>
 
-<p className="mt-4 text-2xl font-bold text-[#9b6175]">
+<p className="mt-4 text-xl font-semibold text-[#9b6a7b]">
 
-{brand.tagline}
-
-</p>
-
-<p className="mt-6 max-w-xl text-lg leading-8 text-[#735160]">
-
-{brand.promise} Aplikacja do prowadzenia podopiecznych,
-
-dziennika treningowego, pomiarów, planów i kobiecej motywacji.
+Piękno • Zdrowie • Harmonia
 
 </p>
 
-<div className="mt-8 flex flex-wrap gap-3">
+<p className="mt-8 max-w-xl text-lg leading-8 text-[#6b5a6c]">
 
-<Link href="/login" className="btn-primary">
+Kobieca przestrzeń przemiany.
 
-Wejdź do aplikacji
+Programy wellness, zdrowe nawyki,
 
-</Link>
+monitoring postępów, aktywność,
 
-<Link href="/dashboard" className="btn-secondary">
+regeneracja i codzienna motywacja.
 
-Zobacz demo
+</p>
 
-</Link>
+<div className="mt-10 flex flex-wrap gap-4">
 
-</div>
+<button className="rounded-2xl bg-[#d98fa5] px-8 py-4 font-bold text-white shadow-lg">
 
-</div>
+Rozpocznij przemianę
 
-<div className="card overflow-hidden p-6">
+</button>
 
-<div className="rounded-[30px] bg-gradient-to-br from-white via-[#fff5f8] to-[#f7dccb] p-6">
+<button className="rounded-2xl border border-[#d98fa5] px-8 py-4 font-bold text-[#d98fa5]">
 
-<div className="flex items-center justify-between">
+Poznaj program
 
-<span className="badge">Dzisiejsza energia</span>
-
-<span className="text-3xl">🌷</span>
-
-</div>
-
-<div className="mt-8 rounded-3xl bg-white/70 p-5">
-
-<div className="text-sm font-bold text-[#9b6a7b]">
-
-Postęp programu
-
-</div>
-
-<div className="mt-2 text-5xl font-black">68%</div>
-
-<div className="mt-4 h-3 rounded-full bg-[#f4d4dd]">
-
-<div className="h-3 w-[68%] rounded-full bg-[#d98fa5]" />
+</button>
 
 </div>
 
 </div>
 
-<div className="mt-5 grid grid-cols-2 gap-4">
+<div>
 
-<div className="rounded-3xl bg-white/70 p-5">
+<img
 
-<div className="text-2xl">💧</div>
+src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200"
 
-<b>Woda</b>
+alt="Wellness"
 
-<p className="text-sm text-[#8f6b78]">6/8 szklanek</p>
+className="rounded-[36px] shadow-2xl"
 
-</div>
-
-<div className="rounded-3xl bg-white/70 p-5">
-
-<div className="text-2xl">🔥</div>
-
-<b>Streak</b>
-
-<p className="text-sm text-[#8f6b78]">9 dni</p>
-
-</div>
-
-<div className="rounded-3xl bg-white/70 p-5">
-
-<div className="text-2xl">🧘‍♀️</div>
-
-<b>Regeneracja</b>
-
-<p className="text-sm text-[#8f6b78]">dobry sen</p>
-
-</div>
-
-<div className="rounded-3xl bg-white/70 p-5">
-
-<div className="text-2xl">✨</div>
-
-<b>Nastrój</b>
-
-<p className="text-sm text-[#8f6b78]">spokojny</p>
+/>
 
 </div>
 
 </div>
+
+</section>
+
+<section className="mt-12">
+
+<h2 className="mb-8 text-center text-4xl font-black text-[#5b4b5c]">
+
+Program Przemiany
+
+</h2>
+
+<div className="grid gap-6 md:grid-cols-4">
+
+<div className="glass rounded-3xl p-6 text-center">
+
+<div className="mb-4 text-4xl">🌸</div>
+
+<h3 className="font-bold">Odżywianie</h3>
+
+<p className="mt-2 text-sm">
+
+Zdrowe nawyki i świadome wybory.
+
+</p>
+
+</div>
+
+<div className="glass rounded-3xl p-6 text-center">
+
+<div className="mb-4 text-4xl">🧘</div>
+
+<h3 className="font-bold">Regeneracja</h3>
+
+<p className="mt-2 text-sm">
+
+Sen, odpoczynek i równowaga.
+
+</p>
+
+</div>
+
+<div className="glass rounded-3xl p-6 text-center">
+
+<div className="mb-4 text-4xl">🚶</div>
+
+<h3 className="font-bold">Aktywność</h3>
+
+<p className="mt-2 text-sm">
+
+Ruch dopasowany do Ciebie.
+
+</p>
+
+</div>
+
+<div className="glass rounded-3xl p-6 text-center">
+
+<div className="mb-4 text-4xl">☀️</div>
+
+<h3 className="font-bold">Harmonia</h3>
+
+<p className="mt-2 text-sm">
+
+Piękno, zdrowie i dobre samopoczucie.
+
+</p>
 
 </div>
 
