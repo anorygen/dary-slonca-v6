@@ -12,7 +12,7 @@ return (
 
 <div className="overflow-hidden rounded-[40px] bg-white/85 shadow-xl backdrop-blur">
 
-<div className="grid min-h-[560px] items-center lg:grid-cols-[42%_58%]">
+<div className="grid min-h-[720px] items-center lg:grid-cols-[38%_62%]">
 
 <div className="px-8 py-10 lg:px-12">
 
@@ -24,25 +24,25 @@ PIĘKNO • ZDROWIE • HARMONIA
 
 <h1 className="mb-6 leading-[0.95]">
 
-<span className="block text-5xl font-black text-[#3d3846] lg:text-[50px]">
+<span className="block text-4xl font-black text-[#3d3846] lg:text-[46px]">
 
 Nie jesteś sama
 
 </span>
 
-<span className="block text-5xl font-black text-[#d695a4] lg:text-[50px]">
+<span className="block text-4xl font-black text-[#d695a4] lg:text-[46px]">
 
 w drodze
 
 </span>
 
-<span className="block font-serif text-5xl italic text-[#c8a06f] lg:text-[50px]">
+<span className="block font-serif text-4xl italic text-[#c8a06f] lg:text-[46px]">
 
 do lepszej
 
 </span>
 
-<span className="block font-serif text-5xl italic text-[#c8a06f] lg:text-[50px]">
+<span className="block font-serif text-4xl italic text-[#c8a06f] lg:text-[46px]">
 
 Ciebie
 
@@ -126,7 +126,7 @@ Poznaj program
 
 </div>
 
-<div className="relative flex h-full min-h-[560px] items-center justify-center bg-[#f7ede9] p-4">
+<div className="relative flex min-h-[720px] items-center justify-center bg-[#f8f1ec] p-6">
 
 <img
 
@@ -134,11 +134,11 @@ src="/hero.jpg.png"
 
 alt="Dary Słońca"
 
-className="max-h-[560px] w-full object-contain"
+className="max-h-[620px] w-full object-contain"
 
 />
 
-<div className="absolute bottom-6 left-6 right-6 rounded-3xl bg-white/90 p-5 shadow-xl backdrop-blur">
+<div className="absolute bottom-10 left-8 right-8 rounded-3xl bg-white/95 p-6 shadow-xl backdrop-blur">
 
 <div className="mb-2 text-xs uppercase tracking-[4px] text-[#b28a67]">
 
@@ -146,7 +146,7 @@ Program Przemiany Kobiet
 
 </div>
 
-<div className="text-xl font-bold text-[#3d3846]">
+<div className="text-2xl font-bold text-[#3d3846]">
 
 Aplikacja + trener + codzienne wsparcie
 
