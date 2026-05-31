@@ -8,11 +8,11 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           <img
 
-src="/logo-dary-slonca.jpg"
+src="/logo-dary-slonca.png"
 
 alt="Dary Słońca"
 
-className="h-11 w-11 rounded-full object-cover"
+className="h-16 w-16 rounded-full object-cover"
 
 />
           <div>
