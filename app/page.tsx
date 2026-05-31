@@ -8,13 +8,13 @@ return (
 
 <Header />
 
-<section className="mx-auto max-w-7xl px-6 py-16">
+<section className="mx-auto max-w-7xl px-6 py-10">
 
 <div className="overflow-hidden rounded-[40px] bg-white shadow-xl">
 
-<div className="grid items-center lg:grid-cols-2">
+<div className="grid min-h-[580px] items-center lg:grid-cols-2">
 
-<div className="p-12 lg:p-16">
+<div className="px-10 py-12 lg:px-14">
 
 <img
 
@@ -22,37 +22,37 @@ src="/logo-dary-slonca.png"
 
 alt="Dary Słońca"
 
-className="mb-8 h-20 opacity-80"
+className="mb-6 h-16 opacity-80"
 
 />
 
-<p className="mb-6 text-sm font-semibold uppercase tracking-[8px] text-[#c7a07a]">
+<p className="mb-5 text-xs font-semibold uppercase tracking-[7px] text-[#c7a07a]">
 
 PIĘKNO • ZDROWIE • HARMONIA
 
 </p>
 
-<h1 className="mb-8 leading-none">
+<h1 className="mb-6 leading-[0.92]">
 
-<span className="block text-6xl font-black text-[#3d3846]">
+<span className="block text-5xl font-black text-[#3d3846] lg:text-6xl">
 
 Nie jesteś sama
 
 </span>
 
-<span className="block text-6xl font-black text-[#d695a4]">
+<span className="block text-5xl font-black text-[#d695a4] lg:text-6xl">
 
 w drodze
 
 </span>
 
-<span className="block font-serif text-6xl italic text-[#c8a06f]">
+<span className="block font-serif text-5xl italic text-[#c8a06f] lg:text-6xl">
 
 do lepszej
 
 </span>
 
-<span className="block font-serif text-6xl italic text-[#c8a06f]">
+<span className="block font-serif text-5xl italic text-[#c8a06f] lg:text-6xl">
 
 Ciebie
 
@@ -60,7 +60,7 @@ Ciebie
 
 </h1>
 
-<p className="mb-8 text-xl leading-relaxed text-[#6b6672]">
+<p className="mb-6 max-w-xl text-lg leading-8 text-[#6b6672]">
 
 Dary Słońca to kobiecy program przemiany premium. Łączymy
 
@@ -70,7 +70,7 @@ który prowadzi Cię krok po kroku.
 
 </p>
 
-<div className="mb-10 space-y-3 text-[#6b6672]">
+<div className="mb-8 space-y-3 text-sm text-[#6b6672]">
 
 <div className="flex items-center gap-3">
 
@@ -144,11 +144,11 @@ src="/hero.jpg.png"
 
 alt="Dary Słońca"
 
-className="h-full min-h-[700px] w-full object-cover"
+className="h-full min-h-[580px] w-full object-cover object-top"
 
 />
 
-<div className="absolute bottom-8 left-8 right-8 rounded-3xl bg-white/95 p-6 shadow-xl backdrop-blur">
+<div className="absolute bottom-6 left-6 right-6 rounded-3xl bg-white/90 p-5 shadow-xl backdrop-blur">
 
 <div className="mb-2 text-xs uppercase tracking-[4px] text-[#b28a67]">
 
@@ -156,7 +156,7 @@ Program Przemiany Kobiet
 
 </div>
 
-<div className="text-2xl font-bold text-[#3d3846]">
+<div className="text-xl font-bold text-[#3d3846]">
 
 Aplikacja + trener + codzienne wsparcie
 
