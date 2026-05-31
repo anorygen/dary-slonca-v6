@@ -1,30 +1,38 @@
-<section className="max-w-7xl mx-auto px-6 py-16">
+import Header from '@/components/Header'
 
-<div className="bg-white rounded-[40px] overflow-hidden shadow-xl">
+export default function Home() {
 
-<div className="grid lg:grid-cols-2 items-center">
+return (
 
-{/* LEWA STRONA */}
+<main>
+
+<Header />
+
+<section className="mx-auto max-w-7xl px-6 py-16">
+
+<div className="overflow-hidden rounded-[40px] bg-white shadow-xl">
+
+<div className="grid items-center lg:grid-cols-2">
 
 <div className="p-12 lg:p-16">
 
 <img
 
-src="/IMG_6089.png"
+src="/logo-dary-slonca.png"
 
 alt="Dary Słońca"
 
-className="h-20 mb-8 opacity-80"
+className="mb-8 h-20 opacity-80"
 
 />
 
-<p className="uppercase tracking-[8px] text-[#c7a07a] text-sm font-medium mb-6">
+<p className="mb-6 text-sm font-semibold uppercase tracking-[8px] text-[#c7a07a]">
 
 PIĘKNO • ZDROWIE • HARMONIA
 
 </p>
 
-<h1 className="leading-none mb-8">
+<h1 className="mb-8 leading-none">
 
 <span className="block text-6xl font-black text-[#3d3846]">
 
@@ -38,13 +46,13 @@ w drodze
 
 </span>
 
-<span className="block text-6xl italic text-[#c8a06f] font-serif">
+<span className="block font-serif text-6xl italic text-[#c8a06f]">
 
 do lepszej
 
 </span>
 
-<span className="block text-6xl italic text-[#c8a06f] font-serif">
+<span className="block font-serif text-6xl italic text-[#c8a06f]">
 
 Ciebie
 
@@ -52,21 +60,21 @@ Ciebie
 
 </h1>
 
-<p className="text-xl text-[#6b6672] leading-relaxed mb-8">
+<p className="mb-8 text-xl leading-relaxed text-[#6b6672]">
 
-Dary Słońca to kobiecy program przemiany premium.
+Dary Słońca to kobiecy program przemiany premium. Łączymy
 
-Łączymy piękną aplikację z codziennym wsparciem
+piękną aplikację z codziennym wsparciem prawdziwego trenera,
 
-prawdziwego trenera, który prowadzi Cię krok po kroku.
+który prowadzi Cię krok po kroku.
 
 </p>
 
-<div className="space-y-3 mb-10">
+<div className="mb-10 space-y-3 text-[#6b6672]">
 
 <div className="flex items-center gap-3">
 
-<span>✦</span>
+<span className="text-[#b98a54]">✦</span>
 
 <span>Indywidualne prowadzenie i kontakt z trenerem</span>
 
@@ -74,7 +82,7 @@ prawdziwego trenera, który prowadzi Cię krok po kroku.
 
 <div className="flex items-center gap-3">
 
-<span>✦</span>
+<span className="text-[#b98a54]">✦</span>
 
 <span>Zdjęcia przemiany, pomiary i monitoring postępów</span>
 
@@ -82,7 +90,7 @@ prawdziwego trenera, który prowadzi Cię krok po kroku.
 
 <div className="flex items-center gap-3">
 
-<span>✦</span>
+<span className="text-[#b98a54]">✦</span>
 
 <span>Kobieca społeczność i codzienna motywacja</span>
 
@@ -90,7 +98,7 @@ prawdziwego trenera, który prowadzi Cię krok po kroku.
 
 <div className="flex items-center gap-3">
 
-<span>✦</span>
+<span className="text-[#b98a54]">✦</span>
 
 <span>Zdrowe nawyki bez presji i rygoru</span>
 
@@ -98,41 +106,51 @@ prawdziwego trenera, który prowadzi Cię krok po kroku.
 
 </div>
 
-<div className="flex gap-4">
+<div className="flex flex-wrap gap-4">
 
-<button className="bg-[#d695a4] hover:bg-[#cb8495] text-white px-8 py-4 rounded-full font-bold transition">
+<a
+
+href="/dashboard"
+
+className="rounded-full bg-[#d695a4] px-8 py-4 font-bold text-white transition hover:bg-[#cb8495]"
+
+>
 
 Rozpocznij przemianę
 
-</button>
+</a>
 
-<button className="border border-[#d695a4] text-[#d695a4] px-8 py-4 rounded-full font-bold">
+<a
+
+href="/plans"
+
+className="rounded-full border border-[#d695a4] px-8 py-4 font-bold text-[#d695a4]"
+
+>
 
 Poznaj program
 
-</button>
+</a>
 
 </div>
 
 </div>
-
-{/* PRAWA STRONA */}
 
 <div className="relative h-full">
 
 <img
 
-src="/hero-premium.jpg"
+src="/hero-premium.png"
 
 alt="Dary Słońca"
 
-className="w-full h-full object-cover min-h-[700px]"
+className="h-full min-h-[700px] w-full object-cover"
 
 />
 
-<div className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur rounded-3xl p-6 shadow-xl">
+<div className="absolute bottom-8 left-8 right-8 rounded-3xl bg-white/95 p-6 shadow-xl backdrop-blur">
 
-<div className="text-xs tracking-[4px] uppercase text-[#b28a67] mb-2">
+<div className="mb-2 text-xs uppercase tracking-[4px] text-[#b28a67]">
 
 Program Przemiany Kobiet
 
@@ -154,3 +172,8 @@ Aplikacja + trener + codzienne wsparcie
 
 </section>
 
+</main>
+
+)
+
+}
