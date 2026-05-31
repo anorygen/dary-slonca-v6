@@ -12,7 +12,7 @@ src="/logo-dary-slonca.png"
 
 alt="Dary Słońca"
 
-className="h-16 w-16 rounded-full object-cover"
+className="h-20 w-20 rounded-full object-cover"
 
 />
           <div>
