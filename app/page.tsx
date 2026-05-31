@@ -260,6 +260,148 @@ Piękniejsze ciało, zdrowie i pewność siebie.
 </div>
 
 </div>
+<section className="mx-auto max-w-7xl px-6 py-24">
+
+<div className="text-center mb-16">
+
+<p className="text-sm uppercase tracking-[4px] text-[#c8ab8c]">
+
+Historie naszych klientek
+
+</p>
+
+<h2 className="mt-4 text-5xl font-bold text-[#2b2a67]">
+
+Metamorfozy kobiet
+
+</h2>
+
+<p className="mt-6 max-w-3xl mx-auto text-xl text-gray-600">
+
+Każda przemiana zaczyna się od jednej decyzji.
+
+Poznaj historie kobiet, które postawiły na siebie.
+
+</p>
+
+</div>
+
+<div className="grid gap-8 md:grid-cols-3">
+
+<div className="overflow-hidden rounded-[30px] bg-white shadow-xl">
+
+<img
+
+src="/hero.jpg.png"
+
+alt="Metamorfoza"
+
+className="h-[320px] w-full object-cover"
+
+/>
+
+<div className="p-6">
+
+<div className="mb-2 text-sm uppercase tracking-[3px] text-[#c8ab8c]">
+
+-12 kg
+
+</div>
+
+<h3 className="mb-3 text-2xl font-bold text-[#2b2a67]">
+
+Anna, 38 lat
+
+</h3>
+
+<p className="text-gray-600">
+
+Odzyskałam energię, pewność siebie i w końcu czuję się dobrze
+
+we własnym ciele.
+
+</p>
+
+</div>
+
+</div>
+
+<div className="overflow-hidden rounded-[30px] bg-white shadow-xl">
+
+<img
+
+src="/hero.jpg.png"
+
+alt="Metamorfoza"
+
+className="h-[320px] w-full object-cover"
+
+/>
+
+<div className="p-6">
+
+<div className="mb-2 text-sm uppercase tracking-[3px] text-[#c8ab8c]">
+
+-18 kg
+
+</div>
+
+<h3 className="mb-3 text-2xl font-bold text-[#2b2a67]">
+
+Marta, 42 lata
+
+</h3>
+
+<p className="text-gray-600">
+
+Nauczyłam się zdrowych nawyków bez rygoru i ciągłych diet.
+
+</p>
+
+</div>
+
+</div>
+
+<div className="overflow-hidden rounded-[30px] bg-white shadow-xl">
+
+<img
+
+src="/hero.jpg.png"
+
+alt="Metamorfoza"
+
+className="h-[320px] w-full object-cover"
+
+/>
+
+<div className="p-6">
+
+<div className="mb-2 text-sm uppercase tracking-[3px] text-[#c8ab8c]">
+
+-9 kg
+
+</div>
+
+<h3 className="mb-3 text-2xl font-bold text-[#2b2a67]">
+
+Karolina, 35 lat
+
+</h3>
+
+<p className="text-gray-600">
+
+Największą zmianą nie było ciało. Była nią pewność siebie.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 
 </section>
 </main>
